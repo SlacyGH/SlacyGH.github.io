@@ -22,7 +22,7 @@ body {
 	background-color: #1c314a; 
 	
 	/* Safari 4-5, Chrome 1-9 */ 
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1c314a), to(#27425f)); 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4a1c1c), to(#2c5f27)); 
 	
 	/* Safari 5.1, Chrome 10+ */ 
 	background: -webkit-linear-gradient(top, #1c314a, #27425f); 
@@ -37,7 +37,7 @@ body {
 	background: -o-linear-gradient(top, #1c314a, #27425f);	
 }
 
-.progress_bar_bg h3.total_goal, .progress_bar_bg h3.minutes {
+.progress_bar_bg h3.total_minutes_goal, .progress_bar_bg h3.total_minutes_completed {
 	font-family: Arial,sans-serif;
   font-size: 2em;
   font-weight: 600;
@@ -49,18 +49,18 @@ body {
 }
 
 
-.progress_bar_bg h3.minutes {
+.progress_bar_bg h3.total_minutes_completed {
 	color: #fff;
 	margin: 14px 25px 0 50px;
 	padding: 0 25px 0 0;
 }
 
-.progress_bar_bg h3.total_goal {
+.progress_bar_bg h3.total_minutes_goal {
 	color: #b2b2b2;
   text-align: center;
 }
 
-body .progress_bar_bg h3.minutes {
+body .progress_bar_bg h3.total_minutes_completed {
     -webkit-animation: fadein 4s; /* Safari and Chrome */
        -moz-animation: fadein 4s; /* Firefox */
         -ms-animation: fadein 4s; /* Internet Explorer */
@@ -97,7 +97,7 @@ body .progress_bar_bg h3.minutes {
     to   { opacity: 1; }
 }​
 
-.progress_bar_bg h3.total_goal {
+.progress_bar_bg h3.total_minutes_goal {
 	float: right;
 	display: inline;
 	padding: 0 25px 0 0;
