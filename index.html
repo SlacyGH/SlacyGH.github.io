@@ -1,21 +1,10 @@
 <h1> Hello World! </h1>
 <p>Still HEAVY under construction, come back again some other time.</p>
   
-<div class="progress_container">
-  <div class="progress_bar" id="progressBar"></div>
-</div>
-
-<p id="progressText"></p>
-
-<script>
-  // Vars
-  const minutes = 500;
-  const goal_minutes = 20000;
-
-  // Cal percentage
-  const progress_to_goal = Math.min((minutes / goal_minutes) * 100), 100);
-
-  // Update width of bar
-  document.getElementById("progressBar").style.width =
-    '${progress_to_goal}%';
-</script>
+	<div class="progress_bar_bg">
+    	<div class="progress_bar">
+        	<h3 class="minutes">500&nbsp;completed </h3>
+        </div>
+        	
+        	<h3 class="total_goal">Goal: 20,000</h3>
+    </div>
