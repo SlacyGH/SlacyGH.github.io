@@ -1,0 +1,132 @@
+body {
+  padding: 50px;  
+}
+
+.progress_bar_bg {
+	margin: 0 auto;
+	width: 65%;
+	height: 78px;
+	border-radius: 10px;
+  text-align: center;
+	-moz-box-shadow:    inset 0 0 10px #ccc;
+	-webkit-box-shadow: inset 0 0 10px #ccc;
+	box-shadow:         inset 0 0 10px #ccc;
+}
+
+.progress_bar {
+	height: 78px;
+	border-radius: 10px;
+	float: left;
+	width: 50%;
+	/* fallback */ 
+	background-color: #1c314a; 
+	
+	/* Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1c314a), to(#27425f)); 
+	
+	/* Safari 5.1, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #1c314a, #27425f); 
+	
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #1c314a, #27425f); 
+	
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #1c314a, #27425f); 
+	
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #1c314a, #27425f);	
+}
+
+.progress_bar_bg h3.total_goal, .progress_bar_bg h3.minutes {
+	font-family: Arial,sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+	line-height: 78px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: inline;
+}
+
+
+.progress_bar_bg h3.minutes {
+	color: #fff;
+	margin: 14px 25px 0 50px;
+	padding: 0 25px 0 0;
+}
+
+.progress_bar_bg h3.total_goal {
+	color: #b2b2b2;
+  text-align: center;
+}
+
+body .progress_bar_bg h3.minutes {
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+.progress_bar_bg h3.total_goal {
+	float: right;
+	display: inline;
+	padding: 0 25px 0 0;
+  text-align: center;
+}
+
+body .progress_bar_bg div {
+	-webkit-animation: progress_bar 2s ease forwards;
+	-moz-animation: progress_bar 2s ease forwards;
+	-o-animation: progress_bar 2s ease forwards;
+	animation: progress_bar 2s ease forwards;
+}
+
+@-webkit-keyframes progress_bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@-moz-keyframes progress_bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@-o-keyframes progress_bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@keyframes progress_bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
