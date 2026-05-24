@@ -119,22 +119,23 @@ body .progress_bar_bg div {
 	animation: progress_bar 2s ease forwards;
 }
 
+
 @-webkit-keyframes progress_bar {
     from { width: 0%; }
-    to { width: 50%; }
+    to { width: var(--progress_bar_width); }
 }
 
 @-moz-keyframes progress_bar {
     from { width: 0%; }
-    to { width: 50%; }
+    to { width: var(--progress_bar_width); }
 }
 
 @-o-keyframes progress_bar {
     from { width: 0%; }
-    to { width: 50%; }
+    to { width: var(--progress_bar_width); }
 }
 
 @keyframes progress_bar {
     from { width: 0%; }
-    to { width: 50%; }
+    to { width: var(--progress_bar_width); }
 }

@@ -1,15 +1,31 @@
+<!DOCTYPE html>
+<html>
 <head> 
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<!--<p>Still HEAVY under construction, come back again some other time..</p>-->
-  
+<body>
+	<!--<h1>Men's Team Minutes</h1>-->
 	<div class="progress_bar_bg">
-    	<div class="progress_bar">
-        	<h3 class="total_minutes_completed">500&nbsp;completed </h3>
-        </div>
-        	
-        	<h3 class="total_minutes_goal">Goal: 20,000</h3>
+		<div class="progress_bar">
+			<h3 class="total_minutes_completed">
+				<span id="min_complete">0</span>&nbsp;completed 
+			</h3>
+		</div>
+			
+			<h3 class="total_minutes_goal">
+				Goal:&nbsp;<span id="goal_min">0</span>
+			</h3>
 
-		<h4 class="current_goal">Current goal: Everyone gets bread</h4>
-    </div>
+		<h4 class="current_goal">Current goal: Hunter makes everybody bread.</h4>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+<!--V 0.0.1-->
+<!--Updates:
+	- Page Now exists
+	- Can modify minutes for goal and completed in the JS, manual enter
+	- Bar and text update based of off those numbers-->
+</html>
