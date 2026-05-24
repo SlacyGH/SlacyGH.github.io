@@ -22,7 +22,7 @@ body {
 	background-color: #1c314a; 
 	
 	/* Safari 4-5, Chrome 1-9 */ 
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1c314a), to(#27425f)); 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4a1c1c), to(#2c5f27)); 
 	
 	/* Safari 5.1, Chrome 10+ */ 
 	background: -webkit-linear-gradient(top, #1c314a, #27425f); 
