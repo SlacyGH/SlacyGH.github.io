@@ -1,0 +1,11 @@
+V 0.0.2
+Updates:
+	0.0.2
+	- Text now takes the right side of the bar if the left side is too small (<31%), 
+		or the left side otherwise; text merged together into 1 box essentially
+	- Removed unnecessary CSS for animation (prefixes are all depricated)
+	- Addition of the changelog
+	0.0.1
+	- Page Now exists
+	- Can modify minutes for goal and completed in the JS, manual enter
+	- Bar and text update based of off those numbers

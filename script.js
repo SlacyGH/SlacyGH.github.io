@@ -1,4 +1,4 @@
-let min_completed = 10000; // Modify me!
+let min_completed = 500; // Modify me!
 const goal_min = 30000 // Modify me!
 
 // Progress made
@@ -14,7 +14,10 @@ prog_bar.style.setProperty(
 document.getElementById('min_complete').textContent = min_completed.toLocaleString();
 document.getElementById('goal_min').textContent = goal_min.toLocaleString();
 
-// // Reload the animation
-// prog_bar.style.animation = 'none';
-// prog_bar.offsetWidth; // "Force reflow"
-// prog_bar.style.animation = 'progress_bar 2s ease forwards'
+const header = document.getElementById('total_minutes_completed_element');
+const container = document.getElementById('progress_bar_element');
+
+if (percent_complete > 30) {
+    container.appendChild(header);
+    header.style.color = '#fafafa';
+}

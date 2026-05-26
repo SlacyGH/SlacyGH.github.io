@@ -37,10 +37,10 @@ body {
 	background: -o-linear-gradient(top, #2f8617, #2f8617);	
 }
 
-.progress_bar_bg h3.total_minutes_goal, .progress_bar_bg h3.total_minutes_completed {
+.progress_bar_bg h3.total_minutes_completed {
 	font-family: Arial,sans-serif;
-  font-size: 2em;
-  font-weight: 600;
+  	font-size: 2em;
+  	font-weight: 600;
 	line-height: 78px;
 	margin: 0;
 	padding: 0;
@@ -48,16 +48,10 @@ body {
 	display: inline;
 }
 
-
 .progress_bar_bg h3.total_minutes_completed {
-	color: #fff;
+	color: #a7a7a7;
 	margin: 14px 25px 0 50px;
 	padding: 0 25px 0 0;
-}
-
-.progress_bar_bg h3.total_minutes_goal {
-	color: #b2b2b2;
-  text-align: center;
 }
 
 body .progress_bar_bg h3.total_minutes_completed {
@@ -68,71 +62,29 @@ body .progress_bar_bg h3.total_minutes_completed {
             animation: fadein 4s;
 }
 
-.progress_bar_bg h4.current_goal {
+h4.current_goal {
 	font-family: Arial,sans-serif;
 	font-size: 2em;
 	font-weight: 500;
 	color: #171717;
+	text-align: center;
 }
 
-
+/* Animation! */
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-}
-
-/* Firefox */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari and Chrome */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }​
 
-/* Opera */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}​
-
-.progress_bar_bg h3.total_minutes_goal {
+.progress_bar_bg {
 	float: right;
 	display: inline;
 	padding: 0 25px 0 0;
-  text-align: center;
+  	text-align: center;
 }
 
 body .progress_bar_bg div {
-	-webkit-animation: progress_bar 2s ease forwards;
-	-moz-animation: progress_bar 2s ease forwards;
-	-o-animation: progress_bar 2s ease forwards;
 	animation: progress_bar 2s ease forwards;
-}
-
-
-@-webkit-keyframes progress_bar {
-    from { width: 0%; }
-    to { width: var(--progress_bar_width); }
-}
-
-@-moz-keyframes progress_bar {
-    from { width: 0%; }
-    to { width: var(--progress_bar_width); }
-}
-
-@-o-keyframes progress_bar {
-    from { width: 0%; }
-    to { width: var(--progress_bar_width); }
 }
 
 @keyframes progress_bar {
